@@ -1,0 +1,129 @@
+.header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #ECECEC;
+    padding: 24.5px;
+
+
+    &__logo {
+        color: var(--color-head);
+        font-size: 26px;
+        font-family: 'Raleway';
+        text-decoration: none;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+    }
+
+    &__logo--accent {
+        color: #2196F3;
+    }
+}
+.navigation {
+    display: flex;
+
+
+    &__list {
+        margin-left: 93px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-right: 50px;
+    }
+
+    &__item:last-child {
+        margin-right: 0px;
+    }
+
+    &__link {
+        color: var(--color-head);
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            &--current {
+                position: relative;
+                color: var(--color-text-hover);
+            }
+        
+            &--current::after {
+                display: block;
+                position: absolute;
+                color: var(--color-text-hover);
+                background: var(--color-text-hover);
+                border-radius: 2px;
+                width: 100%;
+                height: 4px;
+                content: '';
+                bottom: -32px;
+            }
+    }
+
+    &__link:focus {
+        color: var(--color-text-hover);
+    }
+
+    &__link:hover {
+        color: var(--color-text-hover);
+    }
+
+    
+}
+.contacts {
+    margin-left: auto;
+    display: flex;
+
+
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+
+        &__item {
+            margin-right: 30px;
+        }
+
+        &__item:last-child {
+            margin-right: 0;
+        }
+
+        &__link {
+            display: block;
+            color: var(--color-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            line-height: 1.14;
+            fill: #757575;
+            letter-spacing: 0.02em;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__link:hover {
+            color: var(--color-text-hover);
+        }
+
+        &__link:focus {
+            color: var(--color-text-hover);
+        }
+        &__link:hover .adress__icon,
+        &__link:focus .adress__icon {
+            fill: var(--color-svg-content-hover);
+        }
+        &__icon {
+            margin-right: 10px;
+            fill: currentColor;
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}

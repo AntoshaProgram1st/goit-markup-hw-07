@@ -1,0 +1,40 @@
+.customers{  
+    &__title {
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--color-head);
+        margin-bottom: 50px;
+    }
+    &__list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid var(--color-svg-content);
+        fill: var(--color-svg-content);
+        box-sizing: border-box;
+        border-radius: 4px;
+        cursor: pointer;
+        transition-property: border, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+        
+    &__link:hover,
+    &__link:focus {
+        border: 1px solid var(--color-svg-content-hover);
+        fill: var(--color-svg-content-hover);
+    }
+
+
+}

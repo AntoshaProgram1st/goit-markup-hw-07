@@ -1,0 +1,108 @@
+.portfolio{
+
+    &__list {
+        margin-bottom: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    &__button {
+        background-color: #f5f4fA;
+        color: var(--color-head);
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        text-align: center;
+        letter-spacing: 0.03em;
+        border-radius: 4px;
+        padding: 6px 22px;
+        display: flex;
+        border: none;
+        transition-property: background-color, color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    &__button:first-child {
+        padding: 6px 25px;
+    }
+
+    &__button:hover {
+        background-color: var(--color-button-portfolio-hover);
+        color: var(--color-white);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &__button:focus {
+        background-color: var(--color-button-portfolio-hover);
+        color: var(--color-white);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+.projeckt{
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__item:hover,
+    &__item:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &__img {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img:hover .projeckt__overlay {
+        transform: translateY(0);
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+        color: var(--color-white);
+        padding: 63px 24px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: 0.03em;
+        transition: transform 250ms;
+        transform: translateY(101%);
+    }
+
+    &__box {
+        padding: 20px 24px;
+        border: 1px solid #EEEEEE;
+        border-top: none;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        margin-bottom: 4px;
+    }
+
+    &__text {
+        color: var(--color-secondary);
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+    }
+}

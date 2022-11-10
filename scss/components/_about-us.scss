@@ -1,0 +1,46 @@
+.about-us{
+
+    &__list {
+        display: flex;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    &_item {
+        width: calc((100% - 90px)/4);
+    }
+
+    &__item:not(:last-of-type) {
+        margin-right: 30px;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        background-color: #f5f4fa;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        color: var(--color-head);
+        font-size: 14px;
+        line-height: 1.14;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: var(--color-secondary);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+}

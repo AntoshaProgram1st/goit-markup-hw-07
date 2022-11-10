@@ -1,0 +1,176 @@
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        display: flex;
+        gap: 70px;
+    }
+
+}
+.logo {
+        display: flex;
+        flex-direction: column;
+
+
+    &__link {
+        color: #fff;
+        font-size: 26px;
+        font-family: 'Raleway';
+        font-style: normal;
+        text-decoration: none;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        margin-bottom: 20px;
+    }
+
+    &--accent {
+        color: #2196F3;
+    }
+}
+.adress {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+        &__map {
+            color: #FFFFFF;
+            font-style: normal;
+            font-size: 14px;
+            text-decoration: none;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            margin-top: 9px;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__mail,
+        &__tel {
+            color: #ffffff60;
+            font-style: normal;
+            font-size: 14px;
+            ;
+            text-decoration: none;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__map:hover,
+        &__map:focus,
+        &__mail:hover,
+        &__mail:focus,
+        &__tel:hover,
+        &__tel:focus {
+            color: var(--accent-color);
+            color: var(--color-text-hover);
+        }
+}
+.social {
+    margin: 12px 0 40px 0;
+
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.14;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--color-white);
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background-color: var(--background-social-link-footer);
+        fill: var(--fill-social-footer);
+        border-radius: 50%;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--background-social-link-footer-hover);
+    }
+}
+.email {
+    margin-left: 43px;
+    margin-top: 3px;
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--color-white);
+        margin-bottom: 20px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input {
+        width: 358px;
+        height: 50px;
+        padding: 16px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background: none;
+        margin-right: 12px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: var(--color-button-portfolio-hover);
+        border-radius: 4px;
+        border-color: var(--color-button-portfolio-hover);
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        color: var(--color-white);
+
+        fill: var(--color-white);
+    }
+
+    &__send {
+        margin-left: 10px;
+    }
+}
